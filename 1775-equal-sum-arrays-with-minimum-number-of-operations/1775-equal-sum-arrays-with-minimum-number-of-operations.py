@@ -2,7 +2,8 @@ class Solution:
     def minOperations(self, nums1: List[int], nums2: List[int]) -> int:
         sum_nums1=sum(nums1)
         sum_nums2=sum(nums2)
-        if sum_nums1>sum_nums2:
+        
+        if sum_nums1>=sum_nums2:
             nums1,nums2=nums2,nums1
         if 6*len(nums1)<len(nums2):
             return -1
