@@ -16,6 +16,8 @@ class Solution:
             for c in node.children:
                 dfs(c,level+1)
         dfs(root,0)
+        print(d)
+        
         return [lst for k,lst in sorted(d.items())]
                 
         
