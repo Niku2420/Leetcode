@@ -11,7 +11,7 @@ class Solution:
         
         root.left=self.pruneTree(root.left)
         root.right=self.pruneTree(root.right)
-        if not root.right and  not root.left and root.val ==0:
+        if not root.right and  not root.left and not root.val:
             return None
         return root
         
