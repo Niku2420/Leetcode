@@ -5,8 +5,9 @@ class Solution:
         end=len(tokens)-1
         score=0
         max_S=0
+        #using two pointers beg and end for iterating the tokens 
         while beg<=end:
-            if tokens[beg]<=power:
+            if tokens[beg]<=power: 
                 power-=tokens[beg]
                 score+=1
                 max_S=max(max_S,score)
