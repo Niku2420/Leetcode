@@ -9,7 +9,6 @@ class Solution:
                 if newSubset not in subset:
                     subset.append(newSubset)
         return subset
-        
     
         
         
